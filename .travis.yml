@@ -1,0 +1,7 @@
+language: java
+
+before_install:
+  - mkdir -p ~/bin && curl -s https://bitbucket.org/mjensen/mvnvm/raw/master/mvn > ~/bin/mvn && chmod 0755 ~/bin/mvn
+
+script:
+  - mvn test
